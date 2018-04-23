@@ -44,3 +44,6 @@ allow charge_only proc_sysrq:file rw_file_perms;
 # charger needs to tell init to continue the boot
 # process when running in charger mode.
 set_prop(charge_only, system_prop)
+allow charge_only graphics_device:dir search;
+allow charge_only input_device:dir search;
+allow charge_only self:netlink_kobject_uevent_socket { bind read setopt create };

@@ -1,5 +1,5 @@
 # binder_call(init, mm-qcamerad);
-#binder_call(init, hwservicemanager);
+# binder_call(init, hwservicemanager);
 # binder_call(init, servicemanager);
 
 allow init hwservicemanager:binder call;

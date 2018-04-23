@@ -23,5 +23,10 @@ if ! [ "$sku" = "XT1683" ]; then
     rm /system/vendor/lib64/libdtvhal.so
     rm -r /system/vendor/app/DTVPlayer
     rm -r /system/vendor/app/DTVService
+    rm /system/etc/permissions/com.motorola.hardware.dtv.xml
+    rm /system/etc/permissions/mot_dtv_permissions.xml
+    rm /system/lib/libdtvhal.so
+    rm /system/lib/libdtvtuner.so
+    rm -r /system/priv-app/DTVPlayer
+    rm -r /system/priv-app/DTVService
 fi
-
